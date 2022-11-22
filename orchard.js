@@ -52,12 +52,12 @@ const pinkPrice = .55
 // CODE HERE
 
 let totalAcres = 0;
-for (let num fujiAcres  + num pinkAcres + num galaAcres) {
+for (let num of fujiAcres){  //Used a for loop to calc each array separatley and then logged the total to the totalAcres variable.
 
     totalAcres += num;
 
 }
-/*for (let num of pinkAcres){
+for (let num of pinkAcres){
 
     totalAcres += num;
 
@@ -66,7 +66,7 @@ for (let num of galaAcres){
 
     totalAcres += num;
 
-*/
+}
 console.log(totalAcres)
 
 
@@ -85,7 +85,7 @@ console.log(totalAcres)
 
 // CODE HERE
 
-let averageDailyAcres = totalAcres / 7;
+let averageDailyAcres = totalAcres / 7;  //I used the totalAcres and then divided by the seven days of the week to get the avg acres per day. I then logged 9 in the variable = averageDailyAcres
 
 console.log(averageDailyAcres)
 
@@ -130,7 +130,7 @@ let days = 0
 // CODE HERE
 
 while (acresLeft > 0) {
-    for ( days++)
+    
 
 
 
@@ -167,11 +167,11 @@ while (acresLeft > 0) {
 //const pinkAcres = [1, 5, 4, 2, 1, 5, 4]
 
 
-let fujiTons = fujiAcres.slice(0,7) 
+let fujiTons = fujiAcres.slice(0,7)   //I used the slice method but was not sure how to mult 6.5 to each number in the array using code.
 let galaTons = galaAcres.slice(0,7)
 let pinkTons = pinkAcres.slice(0,7)
 
-for (fujiTons = 0; fujiTons * 6.5 fujiAcres.length; fujiTons++) {
+for (fujiTons = 0; fujiTons * 6.5; fujiTons++){
     console.log(fujiTons);
 }
 
